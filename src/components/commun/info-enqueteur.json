@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_commun_info_enqueteurs",
+  "info": {
+    "displayName": "InfoEnqueteur"
+  },
+  "options": {},
+  "attributes": {
+    "enqueteur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "numTablette": {
+      "type": "string"
+    },
+    "gareMonteeReel": {
+      "type": "string"
+    },
+    "gareDescenteReel": {
+      "type": "string"
+    }
+  }
+}
