@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_commun_info_horaire_courses",
+  "info": {
+    "displayName": "infoHoraireCourse"
+  },
+  "options": {},
+  "attributes": {
+    "gareDepartEnq": {
+      "type": "string"
+    },
+    "gareArriveEnq": {
+      "type": "string"
+    },
+    "datetimeDepartEnq": {
+      "type": "datetime"
+    },
+    "datetimeArriveEnq": {
+      "type": "datetime"
+    }
+  }
+}

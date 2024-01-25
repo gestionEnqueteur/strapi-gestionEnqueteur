@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacations",
+  "info": {
+    "singularName": "vacation",
+    "pluralName": "vacations",
+    "displayName": "Vacation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pds": {
+      "type": "string"
+    },
+    "vac": {
+      "type": "string"
+    },
+    "affectation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "vacations"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "vacation"
+    }
+  }
+}
